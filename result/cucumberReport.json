@@ -1,0 +1,60 @@
+[
+  {
+    "id": "Home-Page",
+    "name": "Home Page",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/maninderdhanju/Documents/projects/codeChallenge/todomvc-test/e2e/features/index.feature",
+    "elements": [
+      {
+        "name": "Validate home page",
+        "id": "Home-Page;validate-home-page",
+        "line": 3,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "duration": 628988,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I am on home page",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "duration": 4291123487,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I see title \"TodoMVC\"",
+            "line": 5,
+            "keyword": "And ",
+            "result": {
+              "duration": 10495532,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "duration": 578359630,
+              "status": "passed"
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  }
+]

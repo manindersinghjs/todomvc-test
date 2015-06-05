@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Home-Page",
+    "name": "Home Page",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/maninderdhanju/Documents/projects/codeChallenge/todomvc-test/e2e/features/index.feature",
+    "elements": [
+      {
+        "name": "Validate home page",
+        "id": "Home-Page;validate-home-page",
+        "line": 3,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "duration": 482062,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I am on home page",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "duration": 4427026080,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I see title \"TodoMVC\"",
+            "line": 5,
+            "keyword": "And ",
+            "result": {
+              "duration": 9969907,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I see logo image",
+            "line": 6,
+            "keyword": "And ",
+            "result": {
+              "duration": 33736620,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I validate size and source of logo image",
+            "line": 7,
+            "keyword": "And ",
+            "result": {
+              "duration": 26442686,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "duration": 565851577,
+              "status": "passed"
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  }
+]

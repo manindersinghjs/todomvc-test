@@ -13,7 +13,7 @@ gulp.task('sel', function () {
 // running e2e test - using cucumber
 gulp.task('e2e', function () {
     return gulp.src('e2e/features/*').pipe(cucumber({
-        'steps': 'e2e/selenium/steps/**/*.js',
+        'steps': 'e2e/selenium/steps/*.js',
         'support': 'e2e/selenium/support/*.js',
         'format': 'summary'
     }));
@@ -21,4 +21,9 @@ gulp.task('e2e', function () {
 
 gulp.task('test', function () {
     gulp.start('sel', 'e2e');
+});
+
+// running unit test using TBD
+gulp.task('unit', function () {
+    console.log(" **** Not yet implemented **** ")
 });
