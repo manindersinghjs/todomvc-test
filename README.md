@@ -4,31 +4,23 @@
 #selenium-server 2.45.0
 #selenium-webdriver 2.45.1
 #webdriverio 2.4.5
-    
-
-#e2e Testing
 #cucumber 0.4.8
-#headless browser
-#zombie 4.0.8 
-#selenium-webdriver 2.45.1
 
-#cd web-test     npm install ---> to install all dependencies
+#e2e Testing Setup 
 
-## Run e2e test
+Install all dependencies
+#$: todomvc-test     npm install 
+
 
 #Start Selenium Server 
-#cd web-test    gulp sel  
-
-#	OR 
-
-#cd web-test	java -jar jars/selenium-server-standalone-2.45.0.jar
+#$: todomvc-test    gulp sel  
+#		OR 
+#$: todomvc-test	java -jar jars/selenium-server-standalone-2.45.0.jar
 
 
-#Start e2e test
-#cd web-test    gulp e2e
+#Run e2e test
 
-#cd web-test    gulp test
-
+#$: todomvc-test    gulp e2e
 
 
 # ERROR HANDLING

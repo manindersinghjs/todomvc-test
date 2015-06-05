@@ -19,7 +19,6 @@ gulp.task('e2e', function () {
     }));
 });
 
-
 gulp.task('test', function () {
     gulp.start('sel', 'e2e');
 });
