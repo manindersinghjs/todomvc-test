@@ -1,7 +1,12 @@
-module.exports = function (callback) {
+module.exports = function(callback) {
+    var PROPERTIES = require('../config.json');
+    process.argv.forEach(function(val, index, array) {
+        browsr = val.replace(/[^a-zA-Z ]/g, "");
+        PROPERTIES.browser = browsr;
+    });
 
     if (callback) {
-        var PROPERTIES = require('../config.json');
+
         console.log('Loading browser ');
         var browser = require('webdriverio').remote({
             logLevel: PROPERTIES.logLevel || 'none',
@@ -10,6 +15,7 @@ module.exports = function (callback) {
                 browserName: PROPERTIES.browser || 'chrome'
             }
         });
+        console.log(" **** " + PROPERTIES.browser + " **** ");
         callback(browser);
     }
 };

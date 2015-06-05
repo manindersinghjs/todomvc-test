@@ -3,7 +3,7 @@ var visibleSteps = function() {
     this.World = require("../support/world.js");
     var PROPERTIES = require('../../../config.json');
 
-// Validating page title
+    // Validating page title
     this.When(/^I see title "([^"]*)"$/, function(arg1, callback) {
         this.title(function(err, res) {
             if (res.value === arg1) callback();
@@ -11,19 +11,27 @@ var visibleSteps = function() {
         })
     });
 
-// Validating size of Logo Image
+    // Validating size of Logo Image
     this.Given(/^I validate size and source of logo image$/, function(callback) {
         this.getElementSize('img.logo', function(err, size) {
-            if ((size.width === 500) && (size.height ===86)) callback();
-            else callback.fail(new Error("Expected size is 500X86 but we got "+ size.width+"X"+size.height));
+            if ((size.width === 500) && (size.height === 86)) callback();
+            else callback.fail(new Error("Expected size is 500X86 but we got " + size.width + "X" + size.height));
         })
     });
 
-// Verifying visibity of Logo Image
+    // Verifying visibity of Logo Image
     this.Given(/^I see logo image$/, function(callback) {
         this.isVisible('img.logo', function(err, isVisible) {
             if (isVisible) callback();
             else callback.fail(new Error("Logo Image not displayed"));
+        })
+    });
+
+// Verifying logo message
+    this.Given(/^I should see text "([^"]*)"$/, function(arg1, callback) {
+        this.getText('header div p', function(err, text) {
+            if (text === "Helping you select an MV* framework") callback();
+            else callback.fail(new Error("Expected logo message is Helping you select an MV* framework but we got " + text));
         })
     });
 };

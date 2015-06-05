@@ -28,5 +28,8 @@
     "selenium-server": "2.45.0",
     "selenium-webdriver": "2.45.1",
     "webdriverio": "2.4.5"
+  },
+  "dependencies": {
+    "yargs": "^3.10.0"
   }
 }
