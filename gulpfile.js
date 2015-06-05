@@ -19,10 +19,6 @@ gulp.task('e2e', function () {
     }));
 });
 
-// Watch all js, css files for ant changes
-gulp.task('e2e-watch', function () {
-    gulp.watch(['test/cucumber/selenium/steps/**/*.js', 'test/cucumber/selenium/support/*.js'], ['lint']);
-});
 
 gulp.task('test', function () {
     gulp.start('sel', 'e2e');
