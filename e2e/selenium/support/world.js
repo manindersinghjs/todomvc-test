@@ -1,8 +1,8 @@
 module.exports = function(callback) {
     var PROPERTIES = require('../config.json');
     process.argv.forEach(function(val, index, array) {
-        browsr = val.replace(/[^a-zA-Z ]/g, "");
-        PROPERTIES.browser = browsr;
+        // browsr = val.replace(/[^a-zA-Z ]/g, "");
+        // PROPERTIES.browser = browsr;
     });
 
     if (callback) {

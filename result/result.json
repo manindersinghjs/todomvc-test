@@ -19,7 +19,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 422754,
+              "duration": 410630,
               "status": "passed"
             },
             "match": {}
@@ -29,7 +29,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 4795853909,
+              "duration": 5721111564,
               "status": "passed"
             },
             "match": {}
@@ -39,7 +39,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 9149364,
+              "duration": 8768410,
               "status": "passed"
             },
             "match": {}
@@ -49,7 +49,7 @@
             "line": 6,
             "keyword": "And ",
             "result": {
-              "duration": 31399115,
+              "duration": 37651343,
               "status": "passed"
             },
             "match": {}
@@ -59,7 +59,7 @@
             "line": 7,
             "keyword": "And ",
             "result": {
-              "duration": 23938325,
+              "duration": 23991204,
               "status": "passed"
             },
             "match": {}
@@ -69,7 +69,7 @@
             "line": 8,
             "keyword": "And ",
             "result": {
-              "duration": 34198129,
+              "duration": 37153452,
               "status": "passed"
             },
             "match": {}
@@ -78,7 +78,7 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 565377513,
+              "duration": 571425129,
               "status": "passed"
             },
             "match": {}
