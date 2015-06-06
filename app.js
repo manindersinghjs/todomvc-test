@@ -17,7 +17,7 @@ app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
 
 app.set('port', (process.env.PORT || 3000));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '/app/public')));
 
 app.use('/', routes);
 

@@ -4,7 +4,7 @@ var launchSteps = function() {
     var PROPERTIES = require('../../../config.json');
 
 // Launching app 
-    this.Given(/^I am on home page$/, function(callback) {
+    this.Given(/^I am on ToDo page$/, function(callback) {
         var appUrl = PROPERTIES.url;
         console.log(" Connecting to :: " + appUrl);
         this.init().url(appUrl, function() {
