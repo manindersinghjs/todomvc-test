@@ -24,6 +24,8 @@ Install all dependencies
 #Currently Chrome, Firefox and Safari is supported
 #$: todomvc-test    gulp e2e -<browser_name>
 
+#run app
+#$: todomvc-test node app.js
 
 # ERROR HANDLING
 
