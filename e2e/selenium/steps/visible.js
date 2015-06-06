@@ -27,12 +27,22 @@ var visibleSteps = function() {
         })
     });
 
-// Verifying logo message
+    // Verifying logo message
     this.Given(/^I should see text "([^"]*)"$/, function(arg1, callback) {
         this.getText('header div p', function(err, text) {
             if (text === "Helping you select an MV* framework") callback();
             else callback.fail(new Error("Expected logo message is Helping you select an MV* framework but we got " + text));
         })
+    });
+
+    // Verifying links text and their url's
+    this.Given(/^I should see link "([^"]*)" with href "([^"]*)"$/, function(arg1, arg2, callback) {
+        this.getAttribute('*=' + arg1, 'href', function(err, text) {
+            // console.log("URL from data :: " + arg2);
+            // console.log("URL from UI :: " + text);
+            if (text === arg2) callback();
+            else callback.fail(new Error("Expected url is " + arg2 + " but we got " + text));
+        });
     });
 };
 

@@ -1,6 +1,6 @@
 var myBeforeHooks = function() {
     this.Before(function(callback) {
-        console.log(' ***** In before hook ***** ');
+        console.log(' ***** Builing Test ***** ');
         callback();
     });
 

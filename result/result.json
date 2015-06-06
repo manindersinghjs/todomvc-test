@@ -19,7 +19,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 410630,
+              "duration": 433847,
               "status": "passed"
             },
             "match": {}
@@ -29,7 +29,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 5721111564,
+              "duration": 7889671288,
               "status": "passed"
             },
             "match": {}
@@ -39,7 +39,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 8768410,
+              "duration": 12786087,
               "status": "passed"
             },
             "match": {}
@@ -49,7 +49,7 @@
             "line": 6,
             "keyword": "And ",
             "result": {
-              "duration": 37651343,
+              "duration": 167602609,
               "status": "passed"
             },
             "match": {}
@@ -59,7 +59,7 @@
             "line": 7,
             "keyword": "And ",
             "result": {
-              "duration": 23991204,
+              "duration": 141738719,
               "status": "passed"
             },
             "match": {}
@@ -69,7 +69,7 @@
             "line": 8,
             "keyword": "And ",
             "result": {
-              "duration": 37153452,
+              "duration": 130825902,
               "status": "passed"
             },
             "match": {}
@@ -78,7 +78,85 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 571425129,
+              "duration": 136443689,
+              "status": "passed"
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Home-Page---Tabs-or-Link",
+    "name": "Home Page - Tabs or Link",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/maninderdhanju/Documents/projects/codeChallenge/todomvc-test/e2e/features/tabs.feature",
+    "elements": [
+      {
+        "name": "Validate Links on home page",
+        "id": "Home-Page---Tabs-or-Link;validate-links-on-home-page",
+        "line": 3,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "duration": 234567,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I am on home page",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "duration": 7227472408,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I should see link \"Download\" with href \"https://github.com/tastejs/todomvc/zipball/1.3.0\"",
+            "line": 5,
+            "keyword": "And ",
+            "result": {
+              "duration": 252363340,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I should see link \"View on GitHub\" with href \"https://github.com/tastejs/todomvc\"",
+            "line": 6,
+            "keyword": "And ",
+            "result": {
+              "duration": 260970156,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I should see link \"Blog\" with href \"http://blog.tastejs.com/\"",
+            "line": 7,
+            "keyword": "And ",
+            "result": {
+              "duration": 251088728,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "duration": 134096625,
               "status": "passed"
             },
             "match": {}

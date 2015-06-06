@@ -1,7 +1,7 @@
 var myAfterHooks = function() {
 
     this.After(function(callback) {
-        console.log(' ***** In after hook ***** ');
+        console.log(' ***** Destroying Test ***** ');
         this.end(callback);
     });
 };
