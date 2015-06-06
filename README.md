@@ -21,8 +21,8 @@ Install all dependencies
 
 
 #Run e2e test
-
-#$: todomvc-test    gulp e2e
+#Currently Chrome, Firefox and Safari is supported
+#$: todomvc-test    gulp e2e -<browser_name>
 
 
 # ERROR HANDLING
