@@ -8,8 +8,8 @@
     "uri": "/Users/maninderdhanju/Documents/projects/codeChallenge/todomvc-test/e2e/features/addTodo.feature",
     "elements": [
       {
-        "name": "Validate Todo page",
-        "id": "Validae-ToDo-Page;validate-todo-page",
+        "name": "Validate Todo page one",
+        "id": "Validae-ToDo-Page;validate-todo-page-one",
         "line": 3,
         "keyword": "Scenario",
         "description": "",
@@ -19,7 +19,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 450604,
+              "duration": 403641,
               "status": "passed"
             },
             "match": {}
@@ -29,7 +29,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 4603938727,
+              "duration": 3994806798,
               "status": "passed"
             },
             "match": {}
@@ -39,7 +39,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 12878707,
+              "duration": 12789722,
               "status": "passed"
             },
             "match": {}
@@ -49,7 +49,7 @@
             "line": 6,
             "keyword": "And ",
             "result": {
-              "duration": 158214826,
+              "duration": 144269426,
               "status": "passed"
             },
             "match": {}
@@ -59,7 +59,7 @@
             "line": 7,
             "keyword": "And ",
             "result": {
-              "duration": 1044427306,
+              "duration": 29383559,
               "status": "passed"
             },
             "match": {}
@@ -69,7 +69,7 @@
             "line": 8,
             "keyword": "And ",
             "result": {
-              "duration": 48347862,
+              "duration": 43160311,
               "status": "passed"
             },
             "match": {}
@@ -79,7 +79,7 @@
             "line": 9,
             "keyword": "And ",
             "result": {
-              "duration": 40165403,
+              "duration": 39140397,
               "status": "passed"
             },
             "match": {}
@@ -89,7 +89,7 @@
             "line": 10,
             "keyword": "And ",
             "result": {
-              "duration": 44606481,
+              "duration": 44104518,
               "status": "passed"
             },
             "match": {}
@@ -99,7 +99,7 @@
             "line": 11,
             "keyword": "And ",
             "result": {
-              "duration": 38691621,
+              "duration": 47289617,
               "status": "passed"
             },
             "match": {}
@@ -109,7 +109,7 @@
             "line": 12,
             "keyword": "And ",
             "result": {
-              "duration": 40608060,
+              "duration": 41213184,
               "status": "passed"
             },
             "match": {}
@@ -118,7 +118,125 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 570885610,
+              "duration": 576453580,
+              "status": "passed"
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "Validate Todo page two",
+        "id": "Validae-ToDo-Page;validate-todo-page-two",
+        "line": 14,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "duration": 99802,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I am on ToDo page",
+            "line": 15,
+            "keyword": "Given ",
+            "result": {
+              "duration": 3478152940,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I see title \"Backbone.js • TodoMVC\"",
+            "line": 16,
+            "keyword": "And ",
+            "result": {
+              "duration": 9829528,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I see enter new toDo \"todo one\"",
+            "line": 17,
+            "keyword": "And ",
+            "result": {
+              "duration": 123870052,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I press enter",
+            "line": 18,
+            "keyword": "And ",
+            "result": {
+              "duration": 30798494,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I verify \"todo one\" is displayed",
+            "line": 19,
+            "keyword": "And ",
+            "result": {
+              "duration": 43380469,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I verify todo count with \"1\" todo",
+            "line": 20,
+            "keyword": "And ",
+            "result": {
+              "duration": 35475949,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I verify link \"All\" with href \"http://todomvc.com/examples/backbone/#/\"",
+            "line": 21,
+            "keyword": "And ",
+            "result": {
+              "duration": 53883481,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I verify link \"Active\" with href \"http://todomvc.com/examples/backbone/#/active\"",
+            "line": 22,
+            "keyword": "And ",
+            "result": {
+              "duration": 41717145,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "name": "I verify link \"Completed\" with href \"http://todomvc.com/examples/backbone/#/completed\"",
+            "line": 23,
+            "keyword": "And ",
+            "result": {
+              "duration": 39472888,
+              "status": "passed"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "duration": 569520879,
               "status": "passed"
             },
             "match": {}
@@ -147,7 +265,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 121730,
+              "duration": 52468,
               "status": "passed"
             },
             "match": {}
@@ -157,7 +275,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 3698996751,
+              "duration": 3563803829,
               "status": "passed"
             },
             "match": {}
@@ -167,7 +285,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 10080191,
+              "duration": 9714901,
               "status": "passed"
             },
             "match": {}
@@ -176,7 +294,7 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 566986106,
+              "duration": 572209020,
               "status": "passed"
             },
             "match": {}
@@ -205,7 +323,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 127182,
+              "duration": 78430,
               "status": "passed"
             },
             "match": {}
@@ -215,7 +333,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 3684598397,
+              "duration": 3468717060,
               "status": "passed"
             },
             "match": {}
@@ -225,7 +343,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 9762099,
+              "duration": 9234846,
               "status": "passed"
             },
             "match": {}
@@ -234,7 +352,7 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 579369713,
+              "duration": 573706224,
               "status": "passed"
             },
             "match": {}
@@ -263,7 +381,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 88730,
+              "duration": 69579,
               "status": "passed"
             },
             "match": {}
@@ -273,7 +391,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 3722602198,
+              "duration": 3524487285,
               "status": "passed"
             },
             "match": {}
@@ -283,7 +401,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 9307017,
+              "duration": 8908964,
               "status": "passed"
             },
             "match": {}
@@ -292,7 +410,7 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 566912236,
+              "duration": 570906277,
               "status": "passed"
             },
             "match": {}
@@ -321,7 +439,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 138102,
+              "duration": 118232,
               "status": "passed"
             },
             "match": {}
@@ -331,7 +449,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 3652193644,
+              "duration": 3539225369,
               "status": "passed"
             },
             "match": {}
@@ -341,7 +459,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 9916622,
+              "duration": 8903525,
               "status": "passed"
             },
             "match": {}
@@ -350,7 +468,7 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 568476781,
+              "duration": 570586461,
               "status": "passed"
             },
             "match": {}
@@ -379,7 +497,7 @@
             "keyword": "Before ",
             "hidden": true,
             "result": {
-              "duration": 181990,
+              "duration": 99571,
               "status": "passed"
             },
             "match": {}
@@ -389,7 +507,7 @@
             "line": 4,
             "keyword": "Given ",
             "result": {
-              "duration": 3701452815,
+              "duration": 3504160856,
               "status": "passed"
             },
             "match": {}
@@ -399,7 +517,7 @@
             "line": 5,
             "keyword": "And ",
             "result": {
-              "duration": 15399490,
+              "duration": 8558677,
               "status": "passed"
             },
             "match": {}
@@ -409,7 +527,7 @@
             "line": 6,
             "keyword": "And ",
             "result": {
-              "duration": 37096913,
+              "duration": 37508605,
               "status": "passed"
             },
             "match": {}
@@ -419,7 +537,7 @@
             "line": 7,
             "keyword": "And ",
             "result": {
-              "duration": 28211889,
+              "duration": 28039980,
               "status": "passed"
             },
             "match": {}
@@ -428,7 +546,7 @@
             "keyword": "After ",
             "hidden": true,
             "result": {
-              "duration": 569017181,
+              "duration": 569779467,
               "status": "passed"
             },
             "match": {}

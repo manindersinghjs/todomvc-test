@@ -1,13 +1,14 @@
 module.exports = function JsonOutputHook() {
-  var Cucumber = require('cucumber');
-  var JsonFormatter = Cucumber.Listener.JsonFormatter();
-  var fs = require('fs');
+    var Cucumber = require('cucumber');
+    var JsonFormatter = Cucumber.Listener.JsonFormatter();
+    var fs = require('fs');
 
-  JsonFormatter.log = function (json) {
-    fs.writeFile('result/result.json', json, function (err) {
-      if (err) console.log('**** Report not created ****');
-    });
-  };
+    JsonFormatter.log = function(json) {
+        var nameBrowser = process.argv[3].replace(/\D/, "");
+        fs.writeFile('result/' + nameBrowser + '.json', json, function(err) {
+            if (err) console.log('**** Report not created ****');
+        });
+    };
 
-  this.registerListener(JsonFormatter);
+    this.registerListener(JsonFormatter);
 };

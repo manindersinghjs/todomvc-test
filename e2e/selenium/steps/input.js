@@ -10,8 +10,7 @@ var visibleSteps = function() {
     });
 
     this.Given(/^I press enter$/, function(callback) {
-        this.keys(['Enter'])
-            .pause(1000, callback);
+        this.keys(['Enter'], callback);
     });
 
     this.Given(/^I verify "([^"]*)" is displayed$/, function(arg1, callback) {
