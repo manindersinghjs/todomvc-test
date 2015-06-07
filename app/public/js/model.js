@@ -8,12 +8,15 @@ define([
         render: function(cb) {
             Data.getData('chrome', function(data) {
                 $('.header').text("RESULTS FOR BROWSER --> CHROME");
-                $('.buildTime').text(Date());
                 var result = $.parseJSON(data)
                 var scenarioName;
                 var ulAsString = "";
                 for (var i in result) {
                     var liAsString = "";
+
+                    // Setting timr of execution
+                    $('.buildTime').text(result[i].time);
+
                     var featureName = result[i].name;
                     var allScenarios = result[i].elements
                     for (var j in allScenarios) {

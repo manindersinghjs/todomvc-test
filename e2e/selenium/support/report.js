@@ -5,7 +5,12 @@ module.exports = function JsonOutputHook() {
 
     JsonFormatter.log = function(json) {
         var nameBrowser = process.argv[3].replace(/\D/, "");
-        fs.writeFile('result/' + nameBrowser + '.json', json, function(err) {
+        var myJson = JSON.parse(json);
+        for (var i in myJson) {
+            myJson[i].time=Date()
+        };
+        var result = JSON.stringify(myJson);
+        fs.writeFile('result/' + nameBrowser + '.json', result, function(err) {
             if (err) console.log('**** Report not created ****');
         });
     };
