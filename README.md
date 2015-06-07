@@ -22,7 +22,6 @@ Install all dependencies
 #		OR 
 #$: todomvc-test	java -jar jars/selenium-server-standalone-2.45.0.jar
 
-
 #Run e2e test
 #Currently Chrome, Firefox and Safari is supported
 #$: todomvc-test    gulp e2e -<browser_name>
