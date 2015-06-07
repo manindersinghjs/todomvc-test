@@ -1,4 +1,4 @@
-Feature: Validae ToDo Page
+Feature: Validate ToDo Page
 
   Scenario: Validate Todo Home page
     Given I am on ToDo page 
