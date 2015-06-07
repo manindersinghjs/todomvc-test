@@ -1,5 +1,5 @@
-Feature: Validae Delete ToDo
+Feature: Validate Delete ToDo
 
-  Scenario: Validate Delete Todo 
+  Scenario: User should be able to Delete Todo 
     Given I am on ToDo page 
     And I see title "Backbone.js • TodoMVC"

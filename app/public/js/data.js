@@ -1,7 +1,7 @@
 define([
     'jquery'
 ], function($) {
-
+    "use strict";
     var data = {
 
         // Getting latest results from server

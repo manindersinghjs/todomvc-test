@@ -3,7 +3,7 @@ define([
     'underscore',
     'data'
 ], function($, _, Data) {
-
+    "use strict";
     var model = {
         render: function(cb) {
             Data.getData('chrome', function(data) {
@@ -12,27 +12,27 @@ define([
                 var result = $.parseJSON(data)
                 var scenarioName;
                 var ulAsString = "";
-                for (i in result) {
+                for (var i in result) {
                     var liAsString = "";
                     var featureName = result[i].name;
                     var allScenarios = result[i].elements
-                    for (j in allScenarios) {
+                    for (var j in allScenarios) {
                         scenarioName = allScenarios[j].name;
                         var allSteps = allScenarios[j].steps
                         var stepAsString = '';
-                        for (k in allSteps) {
+                        for (var k in allSteps) {
                             var stepName = allSteps[k].name;
                             if (stepName === undefined) {
-                                sName = allSteps[k].keyword;
+                                var sName = allSteps[k].keyword;
                                 if (sName === "Before ") stepName = "Test Set Up";
                                 else stepName = "Test Destoy";
                             }
                             var stepStatus = allSteps[k].result.status;
-                            stepAsString += "<ul><li>" + stepName + "</li><li>" + stepStatus + "</li></ul>"
+                            stepAsString += "<p><span>" + stepName + "</span><span class='" + stepStatus + "'>" + stepStatus.toUpperCase() + "</span></p>"
                         }
-                        liAsString += "<li>" + scenarioName + stepAsString + "</li>";
+                        liAsString += "<div><a class='scenario'>" + scenarioName + "</a>" + stepAsString + "</div>";
                     }
-                    ulAsString += "<ul>" + featureName + liAsString + "</ul>";
+                    ulAsString += "<div><a  class='feature'> " + featureName + "</a>" + liAsString + "</div>";
                 }
                 $('#wrapper').append(ulAsString);
                 return cb(scenarioName)

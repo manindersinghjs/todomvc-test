@@ -1,4 +1,9 @@
 require.config({
+    shim: {
+        "bootstrap": {
+            "deps": ['jquery']
+        }
+    },
     paths: {
         jquery: '../libs/jquery/jquery',
         underscore: '../libs/underscore/underscore',
@@ -6,10 +11,12 @@ require.config({
         app: '../js/app',
         router: '../js/router',
         view: '../js/view',
-        model : '../js/model'
+        model: '../js/model',
+        bootstrap: "../libs/bootstrap/js/bootstrap"
     }
 });
 
-require(['model'], function(Model) {
-    Model.render(function(data){})
+require(['model', 'bootstrap'], function(Model, bootstrap) {
+    "use strict";
+    Model.render(function(data) {})
 })

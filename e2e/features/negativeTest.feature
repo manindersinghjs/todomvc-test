@@ -1,5 +1,5 @@
-Feature: Validae Negative ToDo
+Feature: Validate Negative ToDo
 
-  Scenario: Validate Negative Todo 
+  Scenario: User should not see following to validate negative scenarios 
     Given I am on ToDo page 
     And I see title "Backbone.js • TodoMVC"

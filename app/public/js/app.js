@@ -1,5 +1,6 @@
 define(function() {
-    var app = {}
+	"use strict";
+    var app = {};
     funUpcase: function(res) {
         return res.toUpperCase();
     }
