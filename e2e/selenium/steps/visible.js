@@ -3,6 +3,7 @@ var visibleSteps = function() {
     var assert = require('assert');
     this.World = require("../support/world.js");
     var PROPERTIES = require('../../../config.json');
+    var HELPER = require('../utility/helpers/todoHelper.js');
 
     // Validating page title
     this.When(/^I see title "([^"]*)"$/, function(arg1, callback) {
@@ -25,6 +26,13 @@ var visibleSteps = function() {
             if (text === arg1) callback();
             else callback.fail(new Error("Expected :: " + arg1 + " but we got " + text));
         });
+    });
+
+    this.When(/^I see all todos are hidden$/, function(callback) {
+        HELPER.checkVisibilityAllTodos(this, function(result) {
+            if (result) callback();
+            else callback.fail(new Error("Todo's are visible"));
+        })
     });
 };
 
