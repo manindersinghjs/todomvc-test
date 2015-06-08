@@ -1,7 +1,8 @@
 module.exports = function(callback) {
+    "use strict";
     var PROPERTIES = require('../config.json');
     process.argv.forEach(function(val, index, array) {
-        browsr = val.replace(/\D/, "");
+        var browsr = val.replace(/\D/, "");
         PROPERTIES.browser = browsr;
     });
 

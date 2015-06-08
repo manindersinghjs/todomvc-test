@@ -1,9 +1,11 @@
 var visibleSteps = function() {
+    "use strict";
     var assert = require('assert');
     this.World = require("../support/world.js");
     var PROPERTIES = require('../../../config.json');
+    var HELPER = require('../utility/helpers/todoHelper.js');
 
-    this.Given(/^I see enter new toDo "([^"]*)"$/, function(arg1, callback) {
+    this.Given(/^I enter new toDo "([^"]*)"$/, function(arg1, callback) {
         this.setValue('input#new-todo', arg1, function() {
             callback()
         })
@@ -36,6 +38,19 @@ var visibleSteps = function() {
         });
     });
 
+    this.Given(/^I enter "([^"]*)" toDo$/, function(arg1, callback) {
+        HELPER.addTodos(arg1, this, function(result) {
+            if (result) callback();
+            else callback.fail(new Error("Adding TODO failed"));
+        })
+    });
+
+    this.Given(/^I verify "([^"]*)" toDo displayed$/, function(arg1, callback) {
+        HELPER.verifyTodos(arg1, this, function(result) {
+            if (result) callback();
+            else callback.fail(new Error("Validate Added TODO failed"));
+        })
+    });
 };
 
 module.exports = visibleSteps;

@@ -1,5 +1,5 @@
+"use strict";
 this.World = require("../support/world.js");
-
 module.exports = {
 
     checkVisibility: function(key) {
