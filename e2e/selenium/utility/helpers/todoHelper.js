@@ -35,15 +35,15 @@ module.exports = {
         })
     },
     checkVisibilityAllTodos: function(S, callback) {
-        // S.getText('.view label', function(err, labels) {
         S.getCssProperty('ul#todo-list li', 'display', function(err, labels) {
             var total = 0;
             var result = false;
             for (var i = 0; i < labels.length; i++) {
                 (function(i) {
-                    console.log("Display === ")
-                    console.log(labels[i].value)
-                    if (labels[i].value !== none) new Error("Todo with index " + i + " is visible");
+                    console.log(labels[i].value !== "none")
+                    //return out --> when display in not none
+                    //return flag -->result will stay false 
+                    if (labels[i].value !== "none") return;
                     if (++total == labels.length) result = true;
                 })(i);
             }

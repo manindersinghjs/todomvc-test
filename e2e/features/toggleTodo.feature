@@ -18,8 +18,8 @@ Scenario: Validate user should be able to hide Active todo's
     And I verify todo count with "5" todo
     When I click on "Active" link 
     And I click on toggle todo icon
-    #And I see all todos are hidden
-
+    And I see all todos are hidden
+    
 Scenario: Validate user should be able to hide Completed todo's
     Given I am on ToDo page 
     And I see title "Backbone.js • TodoMVC"

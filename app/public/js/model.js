@@ -31,11 +31,11 @@ define([
                                 else stepName = "Test Destoy";
                             }
                             var stepStatus = allSteps[k].result.status;
-                            stepAsString += "<p><span>" + stepName + "</span><span class='" + stepStatus + "'>" + stepStatus.toUpperCase() + "</span></p>"
+                            stepAsString += "<p><span> Step : " + stepName + "</span><span class='" + stepStatus + "'>" + stepStatus.toUpperCase() + "</span></p>"
                         }
-                        liAsString += "<div><a class='scenario'>" + scenarioName + "</a>" + stepAsString + "</div>";
+                        liAsString += "<div><a class='scenario'> Scenario : " + scenarioName + "</a>" + stepAsString + "</div>";
                     }
-                    ulAsString += "<div><a  class='feature'> " + featureName + "</a>" + liAsString + "</div>";
+                    ulAsString += "<div><a  class='feature' >Feature : " + featureName + "</a>" + liAsString + "</div>";
                 }
                 $('#wrapper').append(ulAsString);
                 return cb(scenarioName)
