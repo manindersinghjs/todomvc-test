@@ -12,7 +12,7 @@ https://tt-mvc.herokuapp.com/
 
 #e2e Testing Setup 
 
-Install all dependencies
+#Install all dependencies
   #$: todomvc-test     npm install 
 
 #Start Selenium Server 
@@ -21,9 +21,9 @@ Install all dependencies
 #Run e2e test
   #Currently Chrome, Firefox and Safari is supported
   
-  #$: todomvc-test    "gulp e2e -<browser_name>"
+  #$: todomvc-test    "gulp e2e -browser_name"
   
-  #gulp e2e -chrome 
+  #eg. gulp e2e -chrome 
 
 #run app
   #$: todomvc-test node app.js
