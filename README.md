@@ -20,7 +20,9 @@ Install all dependencies
 
 #Run e2e test
   #Currently Chrome, Firefox and Safari is supported
+  
   #$: todomvc-test    "gulp e2e -<browser_name>"
+  
   #gulp e2e -chrome 
 
 #run app
@@ -28,11 +30,14 @@ Install all dependencies
 
 #Error running selenium server
   # Error - "java.net.BindException: Selenium is already running on port 4444
+  
   #http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer# web-app
+  
   #127.0.0.1
 
 # ERROR HANDLING
   #if any error while building  
+  
   #delete folder  node_modules
   #cd node-express     npm install
   #cd ~  pkill -f node
